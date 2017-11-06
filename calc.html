@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+    <head>
+        <title>calculator</title>
+    </head>
+    <body>
+        간단한 계산기
+        <form name="myCalc">
+            <table border="1">
+                <tr>
+                    <input size=16 name="calc">
+                </tr>
+                <tr>
+                    <td><input type="button" name="1" value="1" onclick="myCalc.calc.value += 1"></td>
+                    <td><input type="button" name="2" value="2" onclick="myCalc.calc.value += 2"></td>
+                    <td><input type="button" name="3" value="3" onclick="myCalc.calc.value += 3"></td>
+                    <td><input type="button" name="+" value="+" onclick="myCalc.calc.value += '+'"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" name="4" value="4" onclick="myCalc.calc.value += 4"></td>
+                    <td><input type="button" name="5" value="5" onclick="myCalc.calc.value += 5"></td>
+                    <td><input type="button" name="6" value="6" onclick="myCalc.calc.value += 6"></td>
+                    <td><input type="button" name="-" value="-" onclick="myCalc.calc.value += '-'"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" name="7" value="7" onclick="myCalc.calc.value += 7"></td>
+                    <td><input type="button" name="8" value="8" onclick="myCalc.calc.value += 8"></td>
+                    <td><input type="button" name="9" value="9" onclick="myCalc.calc.value += 9"></td>
+                    <td><input type="button" name="*" value="*" onclick="myCalc.calc.value += '*'"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" name="c" value="c" onclick="myCalc.calc.value = ''"></td>
+                    <td><input type="button" name="0" value="0" onclick="myCalc.calc.value += 0"></td>
+                    <td><input type="button" name="=" value="=" onclick="myCalc.calc.value = eval(myCalc.calc.value)"></td>
+                    <td><input type="button" name="/" value="/" onclick="myCalc.calc.value += '/'"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
